@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'carmela';
+    src: url('carmela.eot');
+    src: url('carmela.eot?#iefix') format('embedded-opentype'),
+         url('carmela.woff') format('woff'),
+         url('carmela.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,16 @@
+#toolContent .svg {
+	height: 200px;
+	overflow-y: scroll;
+	width: 104%;
+	display:flex;
+	flex-wrap: wrap;
+}
+#toolContent .svg > * {
+        width: 9%;
+    height: 38%;
+}
+#toolContent .svg ,
+#toolContent .svg > * ,
+#toolContent:hover .svg  > *{
+	transition-duration:2s;
+}

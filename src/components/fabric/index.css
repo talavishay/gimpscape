@@ -1,0 +1,24 @@
+@import './tools/index.css';
+@import './dialogs/index.css';
+
+#stage > div {
+	margin: 4px auto 0;
+}
+canvas{
+	box-shadow: 1px 1px 1px 1px black;
+}
+.fabricTools{
+	box-shadow: 1px 1px 4px -1px #000;
+	position: absolute;
+	cursor: pointer;
+	direction : ltr;
+	text-align: right;
+}
+.fabricTools > span {    
+}
+.toolbox span:hover{    
+	box-shadow: 0px 0px 8px 2px yellow;
+}
+#fonInit{
+font-size:50px;
+}

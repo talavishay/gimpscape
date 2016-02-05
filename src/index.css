@@ -1,0 +1,28 @@
+@import '../node_modules/spectrum-colorpicker/spectrum.css';
+@import './css/range.css';
+@import './css/fancySelect.css';
+@import './components/fabric/index.css';
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Alef:400,700);
+
+/*
+@import './css/fonts/noot_aj/stylesheet.css';
+*/
+
+body{
+ font-family : arial, Arial, 'arial', 'Arial';
+ padding: 0px;
+ margin: 0px;
+}
+.canvas-container textarea{
+    opacity : 1 !important;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+ 
+    width: 100% !important;
+    height: 100px !important;
+    z-index: 999;
+}

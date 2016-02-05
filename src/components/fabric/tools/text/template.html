@@ -1,0 +1,73 @@
+<div id="toolbar_1" class="toolbar_row">
+	<span class="options"></span>
+
+	<span class="select select-fancy select-fancy-noimage">
+	<select class="fontSize">
+	  <% selectFontSize.forEach(function(option){ %>
+		<option value="<%= option %>"  <%= option === parseInt(fontSize) ? 'selected' : void 0  %>><%= option %></option>
+		<% }) %>
+	</select>
+	</span>
+	<span id="Layer-3" class="textColor"></span>
+	<span id="Layer-4" class="B"></span>
+	<span id="Layer-5" class="I"></span>
+	<span id="Layer-6" class="U"></span>
+	<span id="Layer-7" class="bringForward"></span>
+	<span id="Layer-8" class="sendBack"></span>
+	<span id="Layer-9" class="copyStyle"></span>
+	<span id="Layer-10" class="pasteStyle"></span>
+	<span id="Layer-12" class="copyContent"></span>
+	<span  class="trash"></span>
+	
+</div>
+<br/>
+<div id="toolbar_2">
+	<span class="selectFontFamily select-fancy select-fancy-noimage">
+		<select class="fontFamily">
+			<% selectFontFamily.forEach(function(option){ %>
+				<option value="<%= option.value %>"  <%= (option.value === fontFamily)? 'selected' : void 0  %>><%= option.name %></option>
+				<% }) %>
+			
+		</select>
+	</span>
+	<span  class="textBackgroundColor"  > </span>
+	<span class="textShadow boxShadow"  ></span>
+	<span  class="textStroke"  ></span>
+	<span  class="textStrokeWidth"  >
+		<span class="select select-fancy select-fancy-noimage ">
+			<select class="strokeWidth">
+				<% selectStrokeWidth.forEach(function(option){ %>
+				<option value="<%= option %>"  <%= (option === parseInt(strokeWidth) && stroke)? 'selected' : void 0  %>><%= option %></option>
+				<% }) %>
+			</select>
+		</span>
+	</span>
+	<span  class="_textOpacity"  >
+		<input type="range" min="0" max="1" step=".1" value="<%= textOpacity %>"   class="textOpacity"/>  
+	</span>
+</div>
+
+<br/>
+
+<div id="toolbar_3">
+<!--
+	<span  class="boxBackgroundColor"></span>
+-->
+	<span  class="textAlignLeft"></span>
+	<span  class="textAlignCenter"></span>
+	<span  class="textAlignRight"></span>
+	
+	<span  class="lineHeightWrap">
+		<span  class="lineHeightIcon"></span>
+		<span class="select select-fancy select-fancy-noimage ">
+			<select class="lineHeight">
+				<% selectLineHeight.forEach(function(option){ %>
+					<option value="<%= option %>"  <%= (option === parseInt(lineHeight) && stroke)? 'selected' : void 0  %>><%= option %></option>
+				<% }) %>
+			</select>
+		</span>
+	</span>
+<!--
+	<input type="range" min="0" max="1" step=".1" value="<%= textOpacity %>"   class="boxOpacity"/>  
+-->
+</div>

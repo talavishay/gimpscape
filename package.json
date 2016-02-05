@@ -1,0 +1,78 @@
+{
+  "name": "slushMario",
+  "version": "0.1.0",
+  "description": "",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "browserify": {
+    "transform": [
+      [
+        "node-underscorify",
+        {
+          "extensions": [
+            "tpl",
+            "html",
+            "ejs"
+          ],
+          "requires": [
+            {
+              "variable": "_",
+              "module": "underscore"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "backbone": "~1.1.2",
+    "backbone-pouch": "^1.4.0",
+    "backbone.localstorage": "^1.1.16",
+    "backbone.marionette": "^2.4.1",
+    "backbone.radio": "^1.0.0",
+    "browser-sync": "^1.7.0",
+    "browserify": "^8.0.3",
+    "bundle-collapser": "^1.1.4",
+    "cssnano": "^1.0.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-postcss": "^5.1.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.1",
+    "gulp-watch": "^3.0.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.9.3",
+    "mkdirp": "^0.5.0",
+    "node-underscorify": "0.0.14",
+    "postcss-import": "^5.2.2",
+    "postcss-url": "^3.1.0",
+    "run-sequence": "^1.0.2",
+    "underscore": "^1.8.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "backbone-couch": "^2.0.1",
+    "backbone-pouch-collection": "^0.3.1",
+    "backbone.stickit": "^0.9.2",
+    "gulp-rename": "^1.2.2",
+    "jquery-ui": "^1.10.5",
+    "jsdom": "^7.2.0",
+    "node-underscorify": "0.0.14",
+    "notifyjs": "^1.2.8",
+    "pouchdb": "^5.2.1",
+    "spectrum-colorpicker": "^1.7.1",
+    "xmldom": "^0.1.19"
+  }
+}

@@ -1,0 +1,18 @@
+@import 'dialogs/index.css';
+@import 'text/index.css';
+@import 'shape/index.css';
+@import 'group/index.css';
+/*
+@import 'image/index.css';
+*/
+@import 'objectBehaviour.css';
+
+.toolbox > div > span,
+.toolbox >  span{
+	display: inline-block;    
+	vertical-align: middle;
+}
+.toolbox{
+    text-align: right !important;
+        
+}

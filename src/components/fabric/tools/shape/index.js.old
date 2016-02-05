@@ -1,0 +1,12 @@
+var $ = require('jquery');
+
+require('../jqueryMeasure')($);
+
+var textToolBox = $(require('./template.html')());
+		
+module.exports = textToolBox.measure( function(){ 
+	return  {
+		elm : this,
+		width : this.width()
+	};
+});

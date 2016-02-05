@@ -1,0 +1,1 @@
+ { "name": "amazing-project", "version": "1.0.0", "dependencies": { "fabric": { "version": "1.6.0-rc.1", "from": "fabric@1.6.0-rc1", "dependencies": { "canvas": { "version": "1.3.5", "from": "canvas@1.3.5" } } } } } 
